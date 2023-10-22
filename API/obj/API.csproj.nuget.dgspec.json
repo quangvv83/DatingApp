@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\DatingApp\\api\\API.csproj": {}
+    "C:\\Projects\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\DatingApp\\api\\API.csproj": {
+    "C:\\Projects\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\DatingApp\\api\\API.csproj",
+        "projectUniqueName": "C:\\Projects\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Projects\\DatingApp\\api\\API.csproj",
-        "packagesPath": "C:\\Users\\AKB-QuangVV12\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\DatingApp\\api\\obj\\",
+        "projectPath": "C:\\Projects\\DatingApp\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\QUANG\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

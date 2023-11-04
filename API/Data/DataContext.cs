@@ -11,5 +11,4 @@ public class DataContext : DbContext
     }
 
     public DbSet<AppUser> Users { get; set; }
-    public DbSet<Test> Test { get; set; }
 }

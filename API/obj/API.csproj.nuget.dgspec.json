@@ -17,7 +17,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\AKB-QuangVV12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\QUANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\AKB-QuangVV12\\Documents\\UiPath": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

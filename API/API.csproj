@@ -14,4 +14,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Projects\DatingApp\API\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\Projects\DatingApp\API\.editorconfig" />
+  </ItemGroup>
+
 </Project>

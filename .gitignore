@@ -475,3 +475,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/.vs/DatingApp/DesignTimeBuild/.dtbcache.v2

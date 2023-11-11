@@ -476,3 +476,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 /.vs/DatingApp/DesignTimeBuild/.dtbcache.v2
+API/obj/Debug/net7.0/API.GeneratedMSBuildEditorConfig.editorconfig
+API/obj/Debug/net7.0/API.assets.cache

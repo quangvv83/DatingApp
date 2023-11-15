@@ -489,3 +489,13 @@ API/obj/API.csproj.nuget.g.props
 API/obj/project.assets.json
 API/obj/project.nuget.cache
 API/obj/Debug/net7.0/API.assets.cache
+API/obj/Debug/net7.0/refint/API.dll
+API/obj/Debug/net7.0/ref/API.dll
+API/obj/Debug/net7.0/API.pdb
+API/obj/Debug/net7.0/API.GeneratedMSBuildEditorConfig.editorconfig
+.gitignore
+API/obj/Debug/net7.0/API.assets.cache
+API/obj/project.nuget.cache
+.gitignore
+API/bin/Debug/net7.0/API.pdb
+API/bin/Debug/net7.0/API.dll

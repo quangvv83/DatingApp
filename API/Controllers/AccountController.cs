@@ -18,7 +18,7 @@ public class AccountController : BaseApiController
     }
 
     [HttpPost("register")]
-    public async Task<ActionResult<AppUser>> Register(RegisterDto registerDto)
+    public async Task<ActionResult<AppUser>> Register([FromBody]RegisterDto registerDto)
     {
         if (await UserExists(registerDto.Username))
         {

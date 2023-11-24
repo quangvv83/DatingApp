@@ -536,3 +536,10 @@ API/obj/API.csproj.nuget.dgspec.json
 /API/obj/project.nuget.cache
 /API/obj/API.csproj.nuget.dgspec.json
 /.vs/DatingApp/v17/.suo
+/API/bin/Debug/net7.0/API.dll
+/API/bin/Debug/net7.0/API.pdb
+/API/obj/Debug/net7.0/ref/API.dll
+/API/obj/Debug/net7.0/refint/API.dll
+/API/obj/Debug/net7.0/API.csproj.CoreCompileInputs.cache
+/API/obj/Debug/net7.0/API.dll
+/API/obj/Debug/net7.0/API.pdb

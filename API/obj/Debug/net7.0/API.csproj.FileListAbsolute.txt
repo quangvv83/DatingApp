@@ -129,3 +129,8 @@ C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Projects\DatingApp\API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\DatingApp\API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

@@ -12,7 +12,7 @@
                 <a class="nav-link">Messages</a>
             </li>
         </ul>
-        <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login" autocomplete="off">
+        <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
             <input
                 name="username"
                 [(ngModel)]="model.username" 

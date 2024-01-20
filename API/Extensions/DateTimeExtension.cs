@@ -1,0 +1,18 @@
+﻿using Microsoft.JSInterop.Infrastructure;
+
+namespace API.Extensions
+{
+    public static class DateTimeExtension
+    {
+        public static int CalculateAge(this DateOnly dob)
+        {
+            var today = DateOnly.FromDateTime(DateTime.UtcNow);
+
+            var age = today.Year - dob.Year;
+
+            if (today < dob.AddYears(age)) { age--; }
+
+            return age;
+        }
+    }
+}

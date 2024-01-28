@@ -18,16 +18,16 @@ namespace API.Data
             _mapper = mapper;
         }
 
-        public Task<MemberDto> GetMemberAsync(string username)
+        public async Task<MemberDto> GetMemberAsync(string username)
         {
-            return _context.Users.Where(u => u.UserName == username)
+            return await _context.Users.Where(u => u.UserName == username)
                 .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync();
         }
 
-        public Task<IEnumerable<MemberDto>> GetMembersAsync()
+        public async Task<IEnumerable<MemberDto>> GetMembersAsync()
         {
-            return _context.Users
+            return await _context.Users
                 .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
                 .ToListAsync();
         }

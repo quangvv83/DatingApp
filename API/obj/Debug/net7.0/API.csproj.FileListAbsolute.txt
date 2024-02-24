@@ -87,7 +87,6 @@ D:\Projects\DatingApp\api\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.d
 D:\Projects\DatingApp\api\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Projects\DatingApp\api\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\Projects\DatingApp\api\obj\Debug\net7.0\API.csproj.AssemblyReference.cache
-D:\Projects\DatingApp\api\obj\Debug\net7.0\API.csproj.CopyComplete
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Humanizer.dll
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
@@ -150,3 +149,5 @@ D:\Projects\DatingApp\API\bin\Debug\net7.0\CloudinaryDotNet.dll
 D:\Projects\DatingApp\API\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Projects\DatingApp\API\bin\Debug\net7.0\CloudinaryDotNet.dll
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Projects\DatingApp\API\obj\Debug\net7.0\API.sourcelink.json
+D:\Projects\DatingApp\API\obj\Debug\net7.0\API.csproj.Up2Date

@@ -4746,11 +4746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\DatingApp\\API\\API.csproj",
+      "projectUniqueName": "C:\\Projects\\DatingApp\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Projects\\DatingApp\\API\\API.csproj",
+      "projectPath": "C:\\Projects\\DatingApp\\api\\API.csproj",
       "packagesPath": "C:\\Users\\QUANG\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\DatingApp\\API\\obj\\",
+      "outputPath": "C:\\Projects\\DatingApp\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

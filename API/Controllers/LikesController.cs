@@ -17,7 +17,7 @@ public class LikesController : BaseApiController
         _likesRepository = likesRepository;
     }
 
-    [HttpPost("username")]
+    [HttpPost("{username}")]
     public async Task<ActionResult> AddLike(string username)
     {
         var sourceUserId = int.Parse(User.GetUserId());

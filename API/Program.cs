@@ -1,9 +1,6 @@
 using API.Data;
 using API.Extensions;
-using API.Helpers;
-using API.Interfaces;
 using API.Middleware;
-using API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -16,16 +13,6 @@ builder.Services.AddControllers();
 
 // Add application services
 builder.Services.AddApplicationServices(builder.Configuration);
-
-//builder.Services.AddDbContext<DataContext>(opt =>
-//{
-//    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
-//});
-//builder.Services.AddCors();
-//builder.Services.AddScoped<ITokenService, TokenService>();
-//builder.Services.AddScoped<IUserRepository, UserRepository>();
-//builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-//builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {

@@ -3,6 +3,8 @@ using API.Entities;
 using API.Extensions;
 using API.Helpers;
 using API.Interfaces;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
@@ -10,10 +12,12 @@ namespace API.Data
     public class MessagesRepository : IMessageRepository
     {
         private readonly DataContext _context;
+        private readonly IMapper _mapper;
 
-        public MessagesRepository(DataContext context)
+        public MessagesRepository(DataContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         public void AddMessage(Message message)
@@ -31,9 +35,22 @@ namespace API.Data
             return await _context.Messages.FindAsync(id);
         }
 
-        public Task<PagedList<MessageDto>> GetMessagesForUser()
+        public async Task<PagedList<MessageDto>> GetMessagesForUser(MessageParams messageParams)
         {
-            throw new NotImplementedException();
+            var query = _context.Messages
+                .OrderByDescending(x => x.MessageSent)
+                .AsQueryable();
+
+            query = messageParams.Container switch
+            {
+                "Inbox" => query.Where(u => u.RecipientUsername == messageParams.Username),
+                "Outbox" => query.Where(u => u.SenderUsername == messageParams.Username),
+                _ => query.Where(u => u.RecipientUsername == messageParams.Username && u.DateRead == null),
+            };
+
+            var messages = query.ProjectTo<MessageDto>(_mapper.ConfigurationProvider);
+            return await PagedList<MessageDto>
+                .CreateAsync(messages, messageParams.PageNumber, messageParams.PageSize);
         }
 
         public Task<IEnumerable<MessageDto>> GetMessagesThread(int currentUserId, int recipientId)
@@ -41,9 +58,9 @@ namespace API.Data
             throw new NotImplementedException();
         }
 
-        public Task<bool> SaveAllAsync()
+        public async Task<bool> SaveAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.SaveChangesAsync() > 0;
         }
     }
 }

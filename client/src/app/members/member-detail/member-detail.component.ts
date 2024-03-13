@@ -20,14 +20,24 @@ import { Message } from 'src/app/_models/message';
   ],
 })
 export class MemberDetailComponent implements OnInit {
-  @ViewChild("memberTabs") memberTabs?: TabsetComponent;
-  member: Member | undefined;
+  @ViewChild("memberTabs", {static: true}) memberTabs?: TabsetComponent;
+  member: Member = {} as Member;
   images: GalleryItem[] = [];
   activeTab?: TabDirective;
   messages: Message[] = [];
 
   ngOnInit(): void {
-    this.loadMember();
+    this.route.data.subscribe({
+      next: data => this.member = data['member']
+    })
+
+    this.route.queryParams.subscribe({
+      next: params => {
+        params['tab'] && this.selectTab(params['tab'])
+      },
+    })
+
+    this.getImages();
   }
 
   constructor(private memberService: MembersService, private route: ActivatedRoute, private messageService: MessageService) {
@@ -47,14 +57,6 @@ export class MemberDetailComponent implements OnInit {
     }
   }
 
-  loadMessages() {
-    if (this.member) {
-      this.messageService.getMessageThread(this.member.userName).subscribe({
-        next: messages => this.messages = messages,
-      });
-    }
-  }
-  
   loadMember() {
     const username = this.route.snapshot.paramMap.get('username');
     if (!username) return;

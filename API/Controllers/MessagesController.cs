@@ -5,6 +5,7 @@ using API.Helpers;
 using API.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using System.Numerics;
 
 namespace API;
 
@@ -71,6 +72,38 @@ public class MessagesController : BaseApiController
     {
         var currentUsername = User.GetUsername();
         return Ok(await _messageRepository.GetMessagesThread(currentUsername ,username));
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<IEnumerable<MessageDto>>> DeleteMessage(int id)
+    {
+        var username = User.GetUsername();
+        var message = await _messageRepository.GetMessage(id);
+
+        if (message.SenderUsername != username && message.RecipientUsername != username)
+        {
+            return Unauthorized();
+        }
+
+        if (message.SenderUsername == username)
+        {
+            message.SenderDeleted = true;
+        }
+        if (message.RecipientUsername == username)
+        {
+            message.RecipientDeleted = true;
+        }
+
+        if (message.SenderDeleted && message.RecipientDeleted)
+        {
+            _messageRepository.DeleteMessage(message);
+        }
+
+        if (await _messageRepository.SaveAllAsync())
+        {
+            return Ok();
+        }
+        return BadRequest("Problem deleting message");
     }
 
 }

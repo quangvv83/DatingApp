@@ -3,10 +3,10 @@ import { Photo } from "./photo";
 export interface Message {
     id: number;
     senderId: number;
-    senderUserName: string;
+    senderUsername: string;
     senderPhotoUrl: string;
     recipientId: number;
-    recipientUserName: string;
+    recipientUsername: string;
     recipientPhotoUrl: string;
     content: string;
     dateRead?: Date,

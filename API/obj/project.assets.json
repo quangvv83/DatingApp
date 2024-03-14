@@ -4740,23 +4740,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\QUANG\\.nuget\\packages\\": {},
+    "C:\\Users\\AKB-QuangVV12\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\DatingApp\\API\\API.csproj",
+      "projectUniqueName": "D:\\Projects\\DatingApp\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Projects\\DatingApp\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\QUANG\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\DatingApp\\API\\obj\\",
+      "projectPath": "D:\\Projects\\DatingApp\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\AKB-QuangVV12\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\DatingApp\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\QUANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AKB-QuangVV12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4764,6 +4764,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\AKB-QuangVV12\\Documents\\UiPath": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

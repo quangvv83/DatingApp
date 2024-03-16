@@ -14,16 +14,7 @@ builder.Services.AddControllers();
 // Add application services
 builder.Services.AddApplicationServices(builder.Configuration);
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        ValidateIssuer = false,
-        ValidateAudience = false,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["TokenKey"])),
-    };
-});
+builder.Services.AddIdentityServices(builder.Configuration);
 
 var app = builder.Build();
 

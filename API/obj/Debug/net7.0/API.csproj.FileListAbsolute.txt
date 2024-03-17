@@ -158,3 +158,9 @@ D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityF
 D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

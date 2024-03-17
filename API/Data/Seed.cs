@@ -1,4 +1,5 @@
 ﻿using API.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
@@ -8,9 +9,9 @@ namespace API.Data
 {
     public class Seed
     {
-        public static async Task SeedUsers(DataContext context)
+        public static async Task SeedUsers(UserManager<AppUser> userManager)
         {
-            if (await context.Users.AnyAsync())
+            if (await userManager.Users.AnyAsync())
             {
                 return;
             }
@@ -26,10 +27,8 @@ namespace API.Data
                 
                 user.UserName = user.UserName.ToLower();
 
-                context.Add(user);
+                await userManager.CreateAsync(user, "Pa$$w0rd");
             }
-
-            await context.SaveChangesAsync();
         }
     }
 }

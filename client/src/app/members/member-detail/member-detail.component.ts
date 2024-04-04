@@ -9,6 +9,7 @@ import { MembersService } from 'src/app/_services/members.service';
 import { MemberMessagesComponent } from '../member-messages/member-messages.component';
 import { MessageService } from 'src/app/_services/message.service';
 import { Message } from 'src/app/_models/message';
+import { PresenceService } from 'src/app/_services/presence.service';
 
 @Component({
   selector: 'app-member-detail',
@@ -40,7 +41,8 @@ export class MemberDetailComponent implements OnInit {
     this.getImages();
   }
 
-  constructor(private memberService: MembersService, private route: ActivatedRoute, private messageService: MessageService) {
+  constructor(private memberService: MembersService, private route: ActivatedRoute, 
+    private messageService: MessageService, public presenceService: PresenceService) {
 
   }
 

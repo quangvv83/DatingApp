@@ -68,7 +68,7 @@ namespace API.SignalR
             if (await _messageRepository.SaveAllAsync())
             {
                 var group = GetGroupName(sender.UserName, recipient.UserName);
-                await Clients.Group(group).SendAsync("NewMessage", _mapper.Map<CreateMessageDto>(message));
+                await Clients.Group(group).SendAsync("NewMessage", message);
             }
             
         }

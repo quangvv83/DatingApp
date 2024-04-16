@@ -165,3 +165,5 @@ C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dl
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Projects\DatingApp\API\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 D:\Projects\DatingApp\API\bin\Debug\net7.0\API.staticwebassets.runtime.json
+D:\Projects\DatingApp\api\bin\Debug\net7.0\Npgsql.dll
+D:\Projects\DatingApp\api\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -5040,11 +5040,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\DatingApp\\API\\API.csproj",
+      "projectUniqueName": "D:\\Projects\\DatingApp\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Projects\\DatingApp\\API\\API.csproj",
+      "projectPath": "D:\\Projects\\DatingApp\\api\\API.csproj",
       "packagesPath": "C:\\Users\\AKB-QuangVV12\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\DatingApp\\API\\obj\\",
+      "outputPath": "D:\\Projects\\DatingApp\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
